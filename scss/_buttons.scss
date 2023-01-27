@@ -1,0 +1,77 @@
+  /* ====== BUTTONS ====== */
+  .btn {
+      display: inline-block;
+      font-weight: 400;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      padding: 0.375rem 0.75rem;
+      font-size: 20px;
+      line-height: 1.5;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      border: 1px solid #FFFFFF;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+      color: #1C325B;
+  }
+
+  @mixin button-color($bg) {
+      color: #1C325B;
+      background-color: $bg;
+       border: 1px solid #FFFFFF;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+      font-weight: $w-400;
+
+      &:hover {
+          color: #fff;
+          background: #1C325B;
+          transition: all 0.3s ease;
+          border: 1px solid #1C325B;
+      }
+
+      &:active {
+          color: #fff;
+          background: darken($bg, 6%);
+          border: 1px solid darken($bg, 5%);
+      }
+
+      &:focus {
+          color: #fff;
+      }
+  }
+
+ .btn {
+    @include button-color(#F0F0F3);
+}
+
+.btn-light {
+      @include button-color(#F0F0F3);
+  }
+  
+.btn.is-small {
+      padding: 8px 16px;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500;
+  }
+
+.btn.is-medium {
+      padding: 15px 45px;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 400;
+  }
+
+.btn.is-large {
+      padding: 20px 30px;
+      font-size: 32px;
+      line-height: 36px;
+      font-weight: 400;
+  }
+
+      /* ===== END ===== */

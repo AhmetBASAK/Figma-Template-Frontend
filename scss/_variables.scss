@@ -1,0 +1,28 @@
+:root {
+    /* ===== Colors ===== */
+    --white-color: #FFF;
+    --body-color: #F0F0F3;
+    --text-color: #000000;
+    --sidebar-color: #FFF;
+    --primary-color: #1C325B;
+    --primary-color-light: #F0F0F3;
+    --toggle-color: #DDD;
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+body.dark {
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #fff;
+}
+$white: #ffff;
+$black:#000000;
+$primary:#1C325B;
+$gray:#F0F0F3;
+/* ===== END ===== */

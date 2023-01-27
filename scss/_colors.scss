@@ -1,0 +1,25 @@
+
+
+
+
+//Color Map.
+$colors: (
+  white:#ffff,
+  black:#000000,
+  primary:red,
+  gray:#F0F0F3,
+);
+
+@each $name, $value in $colors {
+  .is-#{$name} {
+    color: $value;
+  }
+}
+
+@each $name, $value in $colors {
+    .bg-#{$name} {
+      background-color: $value;
+    }
+  }
+  
+  

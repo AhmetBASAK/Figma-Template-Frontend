@@ -1,0 +1,29 @@
+    /* ===== ANIMATED ===== */
+
+path {
+    fill-opacity:1;
+    stroke: #ffffff;
+    fill: #f0f0f3;
+
+
+    stroke-width: 2;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 3000;
+
+    animation: animate 10s ease-in-out;
+    @keyframes animate {
+       0%{
+        stroke-dashoffset: 3000;
+        stroke: #1D335A;
+        fill: #F0F0F3;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        fill:#F0F0F3;
+        stroke: #F9F9F9;
+    }
+        
+    }
+}
+
+    /* ===== END ===== */

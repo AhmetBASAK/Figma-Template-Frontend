@@ -1,0 +1,218 @@
+    /* ===== RESPONSİVE ===== */
+    @media (min-width: 1400px) {
+        .content {
+
+            padding: 0 180px;
+        }
+
+        .col {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+    }
+
+
+    @media (min-width: 1281px) and (max-width: 1400px) {
+        .content {
+
+            padding: 0 180px;
+        }
+
+        .col {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        .content {
+
+            padding: 0 50px;
+        }
+
+        .col {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+        .content {
+
+            padding: 0 30px;
+        }
+
+        .col {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .content.statistics .circle-box{
+      
+            width: 50%;
+        }
+        .p-t-50{
+            padding:0;
+        }
+    }
+
+    @media (min-width: 577px) and (max-width: 767px) {
+        .content {
+
+            padding: 0 20px;
+        }
+
+        .header {
+            display: none;
+        }
+
+        .col {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+    
+        footer.footer .list-group-item {
+            padding: 5px 8px;
+            font-size: 12px;
+        }
+        .content.statistics .circle-box{
+         
+            width: 50%;
+          
+        }
+        .p-t-50{
+            padding:0;
+        }
+    }
+
+    @media (min-width: 480px) and (max-width: 576px) {
+        .content {
+
+            padding: 0 10px;
+        }
+
+        .header {
+            display: none;
+        }
+
+        .col {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+   
+
+        footer.footer .list-group-item {
+            padding: 5px 8px;
+            font-size: 12px;
+        }
+
+        .content.statistics .circle-box{
+           
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 479px) {
+        .content.statistics .circle-box{
+    
+            width: 100%;
+        }
+
+        .content {
+
+            padding: 0 10px;
+        }
+
+        .sidebar.close~.wrapper-container {
+
+            width: calc(100% - 70px);
+        }
+
+        .header {
+            display: none;
+        }
+
+        .col {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        footer.footer .list-group-item {
+            padding: 5px 8px;
+            font-size: 12px;
+        }
+        .footer-copyright .list-group .list-group-item{
+            padding: 0 6px;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+    
+        .fluid-container .left {
+            display: none;
+        }
+    
+        .fluid-container .right {
+            width: 60%;
+            margin: auto;
+            display: flex;
+        }
+    }
+
+
+
+
+
+
+
+
+
+    /* For iPhone 5 Portrait or Landscape View */
+    @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+        .content {
+            padding: 0 10px;
+        }
+        .col {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        footer.footer .list-group-item {
+            padding: 5px 8px;
+            font-size: 12px;
+        }
+        .footer-copyright .list-group .list-group-item {
+            padding: 0 6px;
+        }
+    }
+
+    /* For iPhone 6 and 6 plus Portrait or Landscape View */
+    @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+        .content {
+            padding: 0 10px;
+        }
+        .col {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        footer.footer .list-group-item {
+            padding: 5px 8px;
+            font-size: 12px;
+        }
+        .footer-copyright .list-group .list-group-item{
+            padding: 0 6px;
+        }
+    }
+
+    /* ===== END ===== */

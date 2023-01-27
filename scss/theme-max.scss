@@ -1,0 +1,74 @@
+// based on http://css3-buttons.heroku.com/stylesheets/sass/_buttons.sass
+// updated to use compass' own css3 mixins rather than custom ones
+//
+// usage:
+// 
+//    <a href="#" class="button">Foo</a>
+//    <input type="submit" class="button">Bar</a>
+//
+//    .button
+//      +standard-button(red)
+//
+//    padding, radius and font can be over-ridden as usual:
+//    
+//    .button
+//      +standard-button(red)
+//      color: #333
+//      font-size: 2em
+//      padding: 0.5em 1em
+
+@import "compass/css3"
+@mixin button
+  +box-shadow(rgba(0,0,0,.2), 0, 1px, 2px)
+
+  cursor: pointer
+  display: inline-block
+  outline: none
+  text-align: center
+  text-decoration: none
+
+  // this determines Mozilla to show the padding
+  border: solid 1px #ccc
+  text-shadow: 0 1px 1px rgba(0,0,0,.3)
+
+  &:hover
+    text-decoration: none
+
+  &:active
+    position: relative
+    top: 1px
+
+
+@mixin button-color($background)
+
+  +linear-gradient(color-stops(lighten($background, 13%), $background))
+
+  border: solid 1px darken($background, 3%)
+  color= mix(#fff, $background, 90%)
+
+  &:hover
+    +linear-gradient(color-stops(lighten($background, 10%), darken($background, 5%)))
+
+  &:active
+    +linear-gradient(color-stops($background, lighten($background, 10%)))
+    color= mix(#fff, $background, 70%)
+
+
+// Mozilla: don't show border around the button's text on click
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+input[type="file"] > input[type="button"]
+  &::-moz-focus-inner
+    border: none
+
+
+// -----
+
+@mixin standard-button($background)
+  +button
+  +button-color($background)
+  +border-radius(3px)
+  font-weight: bold
+  padding: 0.25em 0.5em
